@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>PF Claim Kit: EPFO Form 19 / 10C prep checklist for job switchers</title>
+<meta name="description" content="Free client-side checklist for Indian employees preparing EPFO UAN KYC and Form 19 / Form 10C claims after leaving a job. Informational only - not EPFO advice.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="./">PF Claim Kit</a>
+  <nav class="top" aria-label="Main">
+    <a href="#checklist">Checklist</a>
+    <a href="#wait">Wait calculator</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>Get your EPFO claim stack ready before you click Submit.</h1>
+  <p class="tagline-hi" lang="hi">Naukri chhodne ke baad PF dava - UAN, KYC aur 2 mahine ka intezaar pehle check karein.</p>
+  <p class="lead">For Indian salaried employees leaving a PF-covered job who want to prepare a <strong>Form 19</strong> (PF final settlement) and/or <strong>Form 10C</strong> (EPS withdrawal benefit / Scheme Certificate) online via the EPFO Member Interface. This kit is a plain checklist and wait-date helper - not a claim filer and not legal advice.</p>
+  <p class="note"><strong>Privacy:</strong> nothing you type leaves this device. No accounts, analytics or cookies. Data stays in this browser unless you copy or print it yourself.</p>
+  <p class="note warn"><strong>Not EPFO, labour or tax advice.</strong> Rules and portals change. Always confirm on the official EPFO pages linked below and with your employer or a qualified professional before you file or pay anything. Prefer <strong>transfer</strong> to a new employer if you are joining another PF-covered job soon.</p>
+</section>
+
+<section id="why" aria-labelledby="why-h">
+  <h2 id="why-h">Why this exists</h2>
+  <div class="card">
+    <ul class="plain">
+      <li>EPFO online claim FAQ says Form 19 / Form 10C need an <strong>activated UAN</strong>, <strong>Aadhaar</strong> seeded with OTP eKYC, and <strong>bank + IFSC</strong> seeded; <strong>PAN</strong> is needed for Form 19 when service is under 5 years.</li>
+      <li>Form 19 online also needs joining & exit dates in the EPFO database, you must not be currently under a PF-covered establishment, and you must wait <strong>at least two months after exit</strong>.</li>
+      <li>Form 10C withdrawal benefit online additionally needs total service more than 6 months and under 9.5 years (per the same FAQ). Many people only discover missing KYC after a rejected claim.</li>
+    </ul>
+    <p class="small">Official sources: <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" rel="noopener noreferrer" target="_blank">EPFO Member Interface</a> · <a href="https://www.epfindia.gov.in/site_docs/PDFs/MiscPDFs/FAQ_OCS_050517_1017.pdf" rel="noopener noreferrer" target="_blank">Online Claim FAQ (PDF)</a> · <a href="https://www.epfindia.gov.in/site_en/WhichClaimForm.php?id=in_sm" rel="noopener noreferrer" target="_blank">Which Claim Form</a>.</p>
+  </div>
+</section>
+
+<section id="checklist" aria-labelledby="check-h">
+  <h2 id="check-h">1. Pre-claim checklist</h2>
+  <p class="lead-sm">Tick what you already have. Progress saves only on this device.</p>
+  <div class="card" id="check-list"></div>
+  <p class="small" id="check-status" aria-live="polite"></p>
+  <div class="actions">
+    <button type="button" id="btn-export" class="btn primary">Copy summary</button>
+    <button type="button" id="btn-print" class="btn">Print / save PDF</button>
+    <button type="button" id="btn-reset-check" class="btn ghost">Reset checklist</button>
+  </div>
+</section>
+
+<section id="wait" aria-labelledby="wait-h">
+  <h2 id="wait-h">2. Two-month wait helper</h2>
+  <p class="lead-sm">EPFO online Form 19 FAQ says the claim should not be submitted before two months after leaving the establishment. Enter your exit date to see a simple earliest-date reminder. This is an arithmetic helper only - confirm on the Member Interface.</p>
+  <div class="card form-grid">
+    <label>Date of exit from last PF job
+      <input id="exit-date" type="date" autocomplete="off">
+    </label>
+    <label>Notes (optional)
+      <input id="exit-notes" type="text" maxlength="120" placeholder="e.g. last working day as per relieving letter" autocomplete="off">
+    </label>
+  </div>
+  <p class="small"><strong>Earliest online Form 19 reminder:</strong> <span id="wait-result">-</span></p>
+  <div class="actions">
+    <button type="button" id="btn-calc-wait" class="btn primary">Calculate</button>
+    <button type="button" id="btn-clear-wait" class="btn ghost">Clear</button>
+  </div>
+</section>
+
+<section id="decide" aria-labelledby="decide-h">
+  <h2 id="decide-h">3. Transfer vs withdraw (plain prompts)</h2>
+  <div class="card">
+    <ul class="plain">
+      <li><strong>Joining another PF job soon?</strong> EPFO Which Claim Form page notes you can wait and get the account transferred instead of withdrawing.</li>
+      <li><strong>Form 19:</strong> PF final settlement after exit (online path subject to KYC + timing rules above).</li>
+      <li><strong>Form 10C:</strong> EPS Withdrawal Benefit or Scheme Certificate - retaining membership can help toward future pension eligibility (see official page notes).</li>
+      <li><strong>Composite Claim Form (Aadhaar):</strong> may replace separate 19 / 10C / 31 when Aadhaar + bank are seeded (per EPFO composite-form circular).</li>
+    </ul>
+    <p class="small">This section is orientation only. Choose and file only on official EPFO channels.</p>
+  </div>
+</section>
+
+<section id="pricing" aria-labelledby="price-h">
+  <h2 id="price-h">Pricing</h2>
+  <div class="price-grid">
+    <div class="card price">
+      <h3>Free checklist</h3>
+      <p class="amount">INR 0</p>
+      <ul class="plain">
+        <li>UAN / KYC / Form 19-10C checklist</li>
+        <li>2-month wait date helper</li>
+        <li>Copy or print summary</li>
+      </ul>
+      <a class="btn" href="#checklist">Use free tool</a>
+    </div>
+    <div class="card price featured">
+      <h3>Pro pack</h3>
+      <p class="amount">INR 199 <span class="or">/ $6.99</span></p>
+      <p class="small">One-time · founding price</p>
+      <ul class="plain">
+        <li>Printable pre-claim checklist (PDF)</li>
+        <li>Employer DOE / KYC request one-pager (Hindi + English)</li>
+        <li>Form 19 / 10C field prep sheet</li>
+        <li>Transfer-vs-withdraw comparison sheet</li>
+      </ul>
+      <a class="btn primary" id="btn-waitlist" href="mailto:shashankbhasin21@gmail.com?subject=PF%20Claim%20Kit%20Pro%20waitlist&body=I%20want%20the%20PF%20Claim%20Kit%20Pro%20pack%20(INR%20199%20%2F%20%246.99).%0A%0AName%3A%0ACity%3A%0A">Email to join waitlist</a>
+      <p class="small">Pay link soon on Gumroad when the payment listing is ready. No fake reviews; no invented traction.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sources" aria-labelledby="src-h">
+  <h2 id="src-h">Official links</h2>
+  <div class="card">
+    <ul class="plain">
+      <li><a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" rel="noopener noreferrer" target="_blank">unifiedportal-mem.epfindia.gov.in - Member Interface</a></li>
+      <li><a href="https://www.epfindia.gov.in/site_docs/PDFs/MiscPDFs/FAQ_OCS_050517_1017.pdf" rel="noopener noreferrer" target="_blank">Online Claim Settlement FAQ (PDF)</a></li>
+      <li><a href="https://www.epfindia.gov.in/site_en/WhichClaimForm.php?id=in_sm" rel="noopener noreferrer" target="_blank">Which Claim Form to Submit</a></li>
+      <li><a href="https://epfindia.gov.in/site_docs/PDFs/Downloads_PDFs/Form19_instructions_Eng.pdf" rel="noopener noreferrer" target="_blank">Form 19 instructions (PDF)</a></li>
+      <li><a href="https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf" rel="noopener noreferrer" target="_blank">Composite Claim Forms circular (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <p class="small">(c) 2026 APEX HOLDING · sold by Shashank Bhasin · D-168 Greater Kailash, Delhi · GSTIN unregistered · <a href="mailto:shashankbhasin21@gmail.com">shashankbhasin21@gmail.com</a></p>
+  <nav class="top" aria-label="Legal">
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="refund.html">Refunds</a>
+  </nav>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
